@@ -54,7 +54,12 @@ public class Klient {
         //problem
     }
     public void anulujRezerwacje(Wydazenie wydazenie){
-        listaRezerwacji.remove(wydazenie);
+        if (listaRezerwacji.contains(wydazenie)) {
+            listaRezerwacji.remove(wydazenie);
+            System.out.println("Anulowano rezerwację na wydarzenie: " + wydazenie.getNazwa());
+        } else {
+            System.out.println("Brak rezerwacji na wydarzenie: " + wydazenie.getNazwa());
+        }
     }
 
 }
