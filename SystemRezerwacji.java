@@ -22,6 +22,9 @@ import java.util.ArrayList;
             wydazenia.add(new Wydazenie(nazwa, cena, data));
         }
 
+
+
+
         public void dodajWydarzenie(String nazwa, double cena, String data, String miejsce) {
             wydazenia.add(new Wydazenie(nazwa, cena, data, miejsce));
         }
